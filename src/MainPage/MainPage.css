@@ -1,0 +1,30 @@
+.MainPage__header {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 2px solid purple;
+  text-transform: uppercase;
+  font-size: 4vh;
+}
+
+.MainPage__logo {
+  height: 70%;
+  width: auto;
+}
+
+.MainPage__btnWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.MainPage .btn {
+  width: 80vw;
+  height: 18vh;
+  font-size: 4vh;
+  border-radius: 3vw;
+}
