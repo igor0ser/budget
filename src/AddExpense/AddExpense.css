@@ -1,0 +1,18 @@
+.AddExpense__inputWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.AddExpense__input {
+  width: 80vw;
+  outline: none;
+  font-size: 5vw;
+}
+
+.AddExpense .btn {
+  background-color: purple;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 0;
+}
+

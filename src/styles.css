@@ -17,8 +17,16 @@ body {
 }
 
 .btn {
-  border: 1px solid #333;
+  border: 2px solid purple;
   background-color: transparent;
   border-radius: 6px;
+  color: purple;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn_primary {
+  background-color: purple;
+  color: white;
 }
 

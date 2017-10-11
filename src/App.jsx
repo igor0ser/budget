@@ -1,32 +1,20 @@
-import React, { PureComponent } from 'react';
-import MainPage from './MainPage/MainPage';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Main from './Main/Main';
 import AddExpense from './AddExpense/AddExpense';
 
-const ManageBudgets = () => <hr />;
+const Budgets = () => <hr />;
 
-const views = { MainPage, ManageBudgets, AddExpense };
-
-class App extends PureComponent {
-  state = { view: 'MainPage' }
-
-  render() {
-    const View = views[this.state.view];
-    return (
-      <div className="wrapper">
-        <View
-          goToMainPage={this.goToMainPage}
-          goToManageBudgets={this.goToManageBudgets}
-          goToAddExpense={this.goToAddExpense}
-        />
-      </div>
-    );
-  }
-
-  goTo = (view) => this.setState({ view })
-  goToMainPage = () => this.goTo('MainPage')
-  goToManageBudgets = () => this.goTo('ManageBudgets')
-
-  goToAddExpense = () => this.goTo('AddExpense')
-}
+const App = () => (
+  <BrowserRouter>
+    <div className="wrapper">
+      <Switch>
+        <Route path="/" component={Main} exact />
+        <Route path="/add-expense" component={AddExpense} />
+        <Route path="/budgets" component={Budgets} />
+      </Switch>
+    </div>
+  </BrowserRouter>
+);
 
 export default App;

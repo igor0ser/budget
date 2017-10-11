@@ -1,20 +1,30 @@
-.MainPage__header {
+.Main__header {
   display: flex;
   height: 20vh;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 5vw;
   border-bottom: 2px solid purple;
-  text-transform: uppercase;
-  font-size: 4vh;
 }
 
-.MainPage__logo {
+.Main__headerText {
+  padding: 0 4vw;
+  line-height: 6vh;
+  font-size: 4vh;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: purple;
+  border-top: 2px dashed purple;
+  border-bottom: 2px dashed purple;
+
+}
+
+.Main__logo {
   height: 70%;
   width: auto;
 }
 
-.MainPage__btnWrapper {
+.Main__btnWrapper {
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -22,9 +32,11 @@
   align-items: center;
 }
 
-.MainPage .btn {
+.Main .btn {
   width: 80vw;
   height: 18vh;
-  font-size: 4vh;
+  line-height: 18vh;
+  font-size: 3.5vh;
   border-radius: 3vw;
+  cursor: pointer;
 }

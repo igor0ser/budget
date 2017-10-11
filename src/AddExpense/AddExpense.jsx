@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import './AddExpense.css';
 import AddExpenseName from './components/AddExpenseName';
 import AddExpenseNumber from './components/AddExpenseNumber';
 
-const steps = { AddExpenseName, AddExpenseNumber };
-console.log(steps);
+import './AddExpense.css';
+
 
 class AddExpense extends PureComponent {
   state = {
@@ -15,8 +14,8 @@ class AddExpense extends PureComponent {
   render() {
     const { val } = this.props;
     return (
-      <div className="AddExpenseName">
-        {val}
+      <div className="AddExpense">
+        <AddExpenseName />
       </div>
     );
   }
