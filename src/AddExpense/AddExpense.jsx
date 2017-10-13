@@ -1,28 +1,17 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import AddExpenseName from './components/AddExpenseName';
 import AddExpenseNumber from './components/AddExpenseNumber';
 
 import './AddExpense.css';
 
 
-class AddExpense extends PureComponent {
-  state = {
-    step: 'AddExpenseName',
-  };
-
-  render() {
-    const { val } = this.props;
-    return (
-      <div className="AddExpense">
-        <AddExpenseName />
-      </div>
-    );
-  }
-}
-
-AddExpense.propTypes = {
-  val: PropTypes.string,
-};
+const AddExpense = () => (
+  <Switch>
+    <Route path="/add-expense" exact component={AddExpenseName} />
+    <Route path="/add-expense/name" component={AddExpenseName} />
+    <Route path="/add-expense/number" component={AddExpenseNumber} />
+  </Switch>
+);
 
 export default AddExpense;

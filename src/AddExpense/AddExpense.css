@@ -10,9 +10,18 @@
 }
 
 .AddExpense .btn {
-  background-color: purple;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 10vw;
   height: 10vw;
   border-radius: 0;
 }
 
+.AddExpense__back {
+  background-image: url('images/back.svg');
+}
+
+.AddExpense__submit {
+  background-image: url('images/yes.svg');
+}

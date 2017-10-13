@@ -1,19 +1,16 @@
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   font-family: sans-serif;
   color: #333;
+  border: 1px solid purple;
 }
 
 * {
   box-sizing: border-box;
-}
-
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  border: 1px solid purple;
-  overflow: hidden;
 }
 
 .btn {
