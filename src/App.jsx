@@ -4,8 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import store from './redux';
 import Main from './Main/Main';
 import AddExpense from './AddExpense/AddExpense';
-
-const Budgets = () => <hr />;
+import Budgets from './Budgets/Budgets';
 
 const App = () => (
   <Provider store={store}>

@@ -11,11 +11,11 @@ class AddExpenseNumber extends PureComponent {
   state = { redirectPath: null }
 
   saveExpense = (number) => {
+    this.setState({ redirectPath: '/' });
     this.props.dispatchSaveExpense({
       name: this.props.name,
       number,
     });
-    this.setState({ redirectPath: '/' });
   }
 
   goBack = () => {
@@ -31,7 +31,7 @@ class AddExpenseNumber extends PureComponent {
     return (
       <div className="AddExpense">
         <InputWrapper
-          type="text"
+          type="number"
           saveValue={this.saveExpense}
           goBack={this.goBack}
           placeholder={`Enter cost of ${name}`}

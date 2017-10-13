@@ -1,5 +1,5 @@
 const SAVE_NAME = 'addExpense/SAVE_NAME';
-const SAVE_EXPENSE = 'addExpense/SAVE_EXPENSE';
+export const SAVE_EXPENSE = 'addExpense/SAVE_EXPENSE';
 
 export const saveName = (name) => ({ type: SAVE_NAME, name });
 export const saveExpense = (expense) => ({ type: SAVE_EXPENSE, expense });

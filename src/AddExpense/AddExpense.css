@@ -7,9 +7,11 @@
   width: 80vw;
   outline: none;
   font-size: 5vw;
+  padding: 1vw 2vw;
 }
 
-.AddExpense .btn {
+.AddExpense__back,
+.AddExpense__submit {
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,4 +26,16 @@
 
 .AddExpense__submit {
   background-image: url('images/yes.svg');
+}
+
+.AddExpense__tipWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.AddExpense__tip {
+  font-size: 5vw;
+  margin: 1vw;
+  padding: 1vw 2vw;
 }

@@ -31,7 +31,7 @@ class InputWrapper extends PureComponent {
           />
           <button className="btn btn_primary AddExpense__submit" type="submit" />
         </div>
-        <div>
+        <div className="AddExpense__tipWrapper">
           {tips
             .filter(tip => toLower(tip).includes(toLower(value)))
             .map(tip => (
